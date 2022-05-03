@@ -1,0 +1,18 @@
+---
+applications:
+  - name: vertx-Hazelcast-Storage
+    routes:
+      - route: vertx-Hazelcast-Storage.apps.pp01.useast.cf.ford.com
+    memory: 1024M
+
+
+    timeout: 60
+    path: ./build/libs/dragon-service-vertexkafka-build-2-gf68588d.jar
+
+
+
+    env:
+      SPRING_PROFILES_ACTIVE: dev
+      SPRING_APPLICATION_NAME: microservice
+
+
